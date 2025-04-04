@@ -1,0 +1,38 @@
+---
+title: "Team"
+template: splash
+---
+
+import TeamCard from '../../components/TeamCard';
+
+We would like to express our sincere appreciation to all contributors! Your hard work, dedication, and valuable input are truly inspiring. Thank you for helping make this project better every day. We are incredibly grateful for your time and effort!
+
+<div
+  style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '20px',
+    justifyContent: 'center',
+    maxWidth: '100%',
+  }}
+>
+  {[
+    { name: 'F1mmel', role: 'Admin', github: 'https://github.com/F1mmel' },
+    { name: '???', role: 'Developer', github: 'https://github.com/Test1' },
+    { name: '???', role: 'Contributor', github: 'https://github.com/Test2' },
+    { name: '???', role: 'Designer', github: 'https://github.com/Test3' },
+    { name: '???', role: 'Tester', github: 'https://github.com/Test4' },
+  ]
+    .sort((a, b) => {
+      const roleHierarchy = ['Admin', 'Developer', 'Contributor', 'Designer', 'Tester'];
+      return roleHierarchy.indexOf(a.role) - roleHierarchy.indexOf(b.role);
+    })
+    .map((member) => (
+      <TeamCard
+        key={member.github}
+        name={member.name}
+        role={member.role}
+        github={member.github}
+      />
+    ))}
+</div>
