@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site – The Legend of Zelda: Twilight Princess Remastered</title>
+    <title>Zelda Twilight Princess Remastered – The Legend of Zelda: Twilight Princess Remastered</title>
     <link>http://localhost:1313/docs/</link>
-    <description>Recent content in The Legend of Zelda: Twilight Princess Remastered on My New Hugo Site</description>
+    <description>Recent content in The Legend of Zelda: Twilight Princess Remastered on Zelda Twilight Princess Remastered</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -83,29 +83,14 @@ Send detailed feedback via email to: &lt;code&gt;contact@fimmel.dev&lt;/code&gt;
     &lt;a href=&#34;#how-can-i-download-the-game&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Head over to the &lt;a href=&#34;http://localhost:1313/download&#34; &gt;download section&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;h3&gt;Will there be beta versions of the game?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;will-there-be-beta-versions-of-the-game&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#will-there-be-beta-versions-of-the-game&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Yes, we plan to release beta versions of the game in the future. We will announce details about the beta testing phase on our website and social media channels, so stay tuned!&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;Aside type=&#34;note&#34; title=&#34;Important note&#34;&gt;
+  This project is legal because no original game files or instructions are provided. The game requires the original GameCube game files, as it is created at runtime using those assets.
 &lt;p&gt;The project follows strict guidelines to avoid legal issues, including:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Contributors must own the game on a GameCube or Wii console and dump their own assets.&lt;/li&gt;
 &lt;li&gt;No original game files or proprietary content are distributed.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Team</title>
-      <link>http://localhost:1313/docs/team/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/docs/team/</guid>
-      <description>
-        
-        
-        &lt;p&gt;import TeamCard from &amp;lsquo;../../components/TeamCard&amp;rsquo;;&lt;/p&gt;
-&lt;p&gt;We would like to express our sincere appreciation to all contributors! Your hard work, dedication, and valuable input are truly inspiring. Thank you for helping make this project better every day. We are incredibly grateful for your time and effort!&lt;/p&gt;
-
+&lt;/Aside&gt;
       </description>
     </item>
     

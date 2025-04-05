@@ -1,4 +1,53 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: My New Hugo Site
+title: Zelda Twilight Princess Remastered
 theme: hextra
+
+params:
+  favicon: "LogoShadowSmall.png"
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: LogoShadowSmall.png
+      link: /
+      width: 64
+      height: 64
+  page:
+    width: wide
+  footer:
+    displayCopyright: true
+    width: wide
+  theme:
+      # light | dark | system
+      default: dark
+      displayToggle: false
+
+
+menu:
+  main:
+    - name: About
+      pageRef: /about
+      weight: 1
+    - name: Docs
+      pageRef: /docs
+      weight: 2
+    - name: Search
+      weight: 3
+      params:
+        type: search
+  sidebar:
+    - name: More
+      params:
+        type: separator
+      weight: 1
+    - name: "About"
+      pageRef: /about
+      weight: 2
+
+      
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
