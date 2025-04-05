@@ -1,0 +1,72 @@
+{{- $username := .Get "name" -}}
+{{- $role := .Get "role" -}}
+
+{{- /* Zentrales Farbschema definieren */ -}}
+{{- $themeColors := dict "primary" "#4CAF50" "secondary" "#c6c6c4" "border" "#aaaa" "shadow" "rgba(0,0,0,0.32)"
+"darkBackground" "rgba(20,20,20,0.6)" "lightBackground" "rgba(20,20,20,0.2)" -}}
+
+{{- /* Rollenfarben und Symbole definieren */ -}}
+{{- $roleData := dict
+"Admin" (dict "color" "#BF9100" "icon" "👑")
+"Developer" (dict "color" "#21c24f" "icon" "💻")
+"Contributor" (dict "color" "#216cc2" "icon" "🤝")
+"Designer" (dict "color" "#fa5c5c" "icon" "🎨")
+"Tester" (dict "color" "#9919e3" "icon" "🧪") -}}
+
+{{- /* Hole die Rollendaten für die übergebene Rolle */ -}}
+{{- $roleInfo := index $roleData .Params.role -}}
+{{- $roleColor := $roleInfo.color -}}
+{{- $roleIcon := $roleInfo.icon -}}
+
+{{- /* GitHub-URL basierend auf dem Namen generieren */ -}}
+{{- $github := printf "https://github.com/%s" $username -}}
+{{- $avatarUrl := printf "https://github.com/%s.png" $username -}}
+
+<div class="team-card"
+    style="width: 225px; margin: 10px; padding: 20px; border: 2px solid {{ $themeColors.border }}; border-radius: 10px; background-color: {{ $themeColors.lightBackground }}; box-shadow: 12px 11px 15px 5px {{ $themeColors.shadow }}; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.3s ease-in-out, background-color 0.3s ease; animation: fadeIn 0.5s ease-in-out;"
+    onmouseover="this.style.transform = 'scale(1.05)'; this.style.backgroundColor = '{{ $themeColors.darkBackground }}';"
+    onmouseout="this.style.transform = 'scale(1)'; this.style.backgroundColor = '{{ $themeColors.lightBackground }}';">
+    <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" title="Visit {{ $username }}'s GitHub Profile">
+        <img src="{{ $avatarUrl }}" onError="this.src='/default-avatar.png'" alt="{{ $username }}'s GitHub Avatar"
+            style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 10px; transition: transform 0.3s ease-in-out;" />
+    </a>
+    <h3 style="margin: 0; font-size: 1.4em; color: {{ $themeColors.secondary }}; text-align: center;">
+        <span class="github-displayname" data-github-name="{{ .Params.name }}"></span>
+    </h3>
+    <p style="margin: 5px 0; font-size: 1.2em; font-weight: 500; color: {{ $roleColor }}; text-align: center;">
+        {{ $roleIcon }} {{ .Params.role }}
+    </p>
+</div>
+
+<script>
+    function fetchGitHubDisplayName(username, index, elements) {
+        const url = `https://api.github.com/users/${username}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const displayName = data.name || username;
+                // Setze den Displaynamen im data-Attribut, um Flackern zu verhindern
+                elements[index].setAttribute('data-github-name', displayName);
+                // Aktualisiere den sichtbaren Text aus dem data-Attribut
+                elements[index].innerText = displayName;
+            })
+            .catch(error => {
+                console.error("Fehler beim Abrufen des Displaynamens:", error);
+                // Fallback auf den Username, falls es einen Fehler gibt
+                elements[index].setAttribute('data-github-name', username);
+                elements[index].innerText = username;
+            });
+    }
+
+    window.onload = function () {
+        const elements = document.querySelectorAll('.github-displayname');
+
+        elements.forEach((element, index) => {
+            const username = element.getAttribute('data-github-name');
+            fetchGitHubDisplayName(username, index, elements);
+        });
+    };
+
+
+</script>

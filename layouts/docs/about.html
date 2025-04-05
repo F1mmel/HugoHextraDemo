@@ -1,0 +1,15 @@
+<script>
+    console.log("BASE")
+    document.addEventListener('DOMContentLoaded', function() {
+        // Finde das Element mit der ID "backToTop"
+        const backToTopElement = document.getElementById('backToTop');
+        
+        if (backToTopElement) {
+            // Lösche das Elternelement des "backToTop"-Elements
+            const parentElement = backToTopElement.parentElement;
+            if (parentElement) {
+                parentElement.remove();
+            }
+        }
+    });
+</script>
