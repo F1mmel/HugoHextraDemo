@@ -1,6 +1,8 @@
 ﻿# Generated files by hugo
 /public/*
 /resources/_gen/
+.idea/
+__START.bat
 /assets/jsconfig.json
 hugo_stats.json
 
