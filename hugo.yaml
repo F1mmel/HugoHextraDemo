@@ -17,6 +17,7 @@ params:
     width: wide
   footer:
     displayCopyright: true
+    displayPoweredBy: false
     width: wide
   theme:
       # light | dark | system
