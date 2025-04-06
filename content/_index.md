@@ -22,7 +22,7 @@ This is a fan-made remake of *The Legend of Zelda: Twilight Princess*, rebuilt f
 
 This remastered version uses the **original game files from the Twilight Princess ISO** to load assets such as models, textures, animations, and sounds. This ensures authenticity while taking advantage of a modern engine.
 
-### Features:
+### Features
 - Updated graphics with modern lighting, shadows, and effects powered by Unity
 - Controller and keyboard/mouse support
 - Runs directly from your legally-owned ISO file
