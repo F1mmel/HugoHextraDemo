@@ -63,3 +63,6 @@
         }
     });
 </script>
+
+{{ $script := resources.Get "js/smoothScroll.js" | js.Build | minify }}
+<script src="{{ $script.RelPermalink }}" defer></script>
