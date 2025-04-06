@@ -14,7 +14,7 @@ This is a non-commercial, passion-driven remake of **The Legend of Zelda: Twilig
 - Modernize visuals, lighting, and environments using Unity's Universal Render Pipeline (HDRP in the future)
 - Improve controls and camera for smoother gameplay on modern systems
 - Introduce quality-of-life improvements and UI refinements
-- Supporting HD textures
+- **Full HD Compatibility**
 - Preserve the nostalgic atmosphere while enhancing immersion
 
 ---
