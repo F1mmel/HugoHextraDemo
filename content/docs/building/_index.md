@@ -10,5 +10,5 @@ Explore the following sections to learn how to use Hextra:
 <!--more-->
 
 {{< cards >}}
-{{< card link="unityDevSetup" title="Unity Developer Setup" icon="document-duplicate" >}}
+{{< card link="unity" title="Unity Developer Setup" icon="document-duplicate" >}}
 {{< /cards >}}
