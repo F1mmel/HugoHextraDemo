@@ -1,5 +1,6 @@
 ---
-title: About
+title: "About"
+description: "About"
 ---
 
 ## What is this?
@@ -9,7 +10,7 @@ This is a community-driven project aiming to enhance and remaster *The Legend of
 > [!WARNING]
 > If the game is built from source, it is **not possible to play the game** without providing the Unity assets used to create it.  
 > These assets are **not** included in this project and must be provided separately.  
-> You can find more information on how to integrate the Unity assets [here](/installation#assets).
+> You can find more information on how to integrate the Unity assets [here](/docs/building/unitydevsetup/#4-import-required-assets).
 
 ## Project goals
 

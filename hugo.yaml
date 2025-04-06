@@ -33,18 +33,29 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 2
-    - name: Search
+    - name: Contact
+      pageRef: /contact
       weight: 3
+    - name: Team
+      pageRef: /team
+      weight: 4
+    - name: Search
+      weight: 10
       params:
         type: search
-  sidebar:
-    - name: More
+    - name: GitHub
+      weight: 6
+      url: "https://github.com/F1mmel/ZeldaTwilightPrincessRemastered"
       params:
-        type: separator
-      weight: 1
-    - name: "About"
-      pageRef: /about
-      weight: 2
+        icon: github
+    #sidebar:
+      #  - name: More
+        #   params:
+      #     type: separator
+    #    weight: 1
+      #   - name: "DAS"
+      #    pageRef: /about
+      #   weight: 2
 
       
 

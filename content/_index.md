@@ -28,49 +28,17 @@ This remastered version uses the **original game files from the Twilight Princes
 - Runs directly from your legally-owned ISO file
 - Quality-of-life improvements and performance tweaks
 
-{{< callout type="warning" >}}
-  Note: A **legal copy of the game (ISO)** is required to play. The ISO file is **not** included.
-{{< /callout >}}
+> [!WARNING]
+> A **legal copy of the game (ISO)** is required to play. The ISO file is **not** included.
 
 ## Explore
 
 {{< cards >}}
-  {{< card link="screenshots" title="Screenshots" icon="photograph" >}}
-  {{< card link="devlog" title="Devlog" icon="code" >}}
-  {{< card link="download" title="Download" icon="download" >}}
-  {{< card link="faq" title="FAQ" icon="question-mark-circle" >}}
+    {{< card link="screenshots" title="Screenshots" subtitle="A collection of in-game scenes and previews." icon="photograph" >}}
+    {{< card link="devlog" title="Devlog" subtitle="Stay up to date on development progress and news." icon="code" >}}
+    {{< card link="download" title="Download" subtitle="Get the latest build of the game and try it out." icon="download" >}}
+    {{< card link="faq" title="FAQ" subtitle="Frequently asked questions and useful information." icon="question-mark-circle" >}}
 {{< /cards >}}
 
-
-
-<div class="hx-mb-12">
-{{< hextra/feature-grid >}}
-  {{< hextra/feature-card
-    title="Screenshots"
-    subtitle="asdasdasd"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/0.png"
-    imageClass="hx-top-[40%] hx-w-[110%] sm:hx-w-[110%]"
-    style="background: linear-gradient(rgba(42,100,158,0),rgba(147, 126, 8, 0.4));"
-    link="screenshots"
-  >}}
-  {{< hextra/feature-card
-    title="Performing live with Ardour"
-    subtitle="Using a DAW for live sound shaping and mixing<br>Sonoj 2024 Talk"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="talks/performing-live-with-ardour/img/cover.jpg"
-    imageClass="hx-top-[40%] hx-w-[110%] sm:hx-w-[110%]"
-    style="background: linear-gradient(rgba(42,100,158,0),rgba(42,100,158,0.4));"
-    link="talks/performing-live-with-ardour/"
-  >}}
-  {{< hextra/feature-card
-    title="Profile"
-    subtitle="Plays guitar, bass, mandolin, and drums; Tinkers using Free/Libre Open Source Software; Advocates privacy and self-hosting."
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="images/profile.jpg"
-    imageClass="hx-top-[40%] hx-w-[110%] sm:hx-w-[110%] hx-opacity-80"
-    style="background: linear-gradient(rgba(42,100,158,0),rgba(42,100,158,0.4));"
-    link="about/"
-  >}}
-{{< /hextra/feature-grid >}}
-</div>
+## Trailer
+{{< video url="/vid/trailer.mp4" caption="Zelda Twilight Princess Remastered - Trailer" thumbnail="/vid/trailer_thumbnail.png">}}

@@ -1,0 +1,65 @@
+<div class="custom-footer-top" style="border-top: 1px solid #eee; padding-top: 2rem; text-align: center; max-width: 1200px; margin: 0 auto;">
+    <p style="font-size: 1rem; color: #999;">
+        This fan project is made with ❤️ by Zelda fans.<br>
+        All original assets belong to Nintendo. This is a non-commercial fan-made remake.
+    </p>
+
+    <div style="margin-top: 1rem; padding-bottom: 1rem; color: #999;">
+        <a href="https://github.com/F1mmel/ZeldaTwilightPrincessRemastered" target="_blank" style="margin: 0 0.5rem;" class="footer-links">GitHub</a> |
+        <a href="/about" style="margin: 0 0.5rem;" class="footer-links">About</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const head = document.head;
+
+        const linkData = [
+            { rel: "apple-touch-icon", sizes: "57x57", href: "/favicon-57x57.png" },
+            { rel: "apple-touch-icon", sizes: "60x60", href: "/favicon-60x60.png" },
+            { rel: "apple-touch-icon", sizes: "72x72", href: "/favicon-72x72.png" },
+            { rel: "apple-touch-icon", sizes: "76x76", href: "/favicon-76x76.png" },
+            { rel: "apple-touch-icon", sizes: "114x114", href: "/favicon-114x114.png" },
+            { rel: "apple-touch-icon", sizes: "120x120", href: "/favicon-120x120.png" },
+            { rel: "apple-touch-icon", sizes: "144x144", href: "/favicon-144x144.png" },
+            { rel: "apple-touch-icon", sizes: "152x152", href: "/favicon-152x152.png" },
+            { rel: "apple-touch-icon", sizes: "180x180", href: "/favicon-180x180.png" },
+            { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
+            { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
+            { rel: "icon", type: "image/png", sizes: "96x96", href: "/favicon-96x96.png" },
+            { rel: "icon", type: "image/png", sizes: "192x192", href: "/favicon-192x192.png" },
+            { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
+            { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+        ];
+
+        const metaData = [
+            { name: "msapplication-TileColor", content: "#ffffff" },
+            { name: "msapplication-TileImage", content: "/favicon-144x144.png" },
+            { name: "msapplication-config", content: "/browserconfig.xml" }
+        ];
+
+        // Füge alle <link> Tags hinzu
+        linkData.forEach(data => {
+            const link = document.createElement("link");
+            Object.keys(data).forEach(key => {
+                link.setAttribute(key, data[key]);
+            });
+            head.appendChild(link);
+        });
+
+        // Füge alle <meta> Tags hinzu
+        metaData.forEach(data => {
+            const meta = document.createElement("meta");
+            Object.keys(data).forEach(key => {
+                meta.setAttribute(key, data[key]);
+            });
+            head.appendChild(meta);
+        });
+
+        // Entferne Back-to-Top Button (optional)
+        const backToTopElement = document.getElementById('backToTop');
+        if (backToTopElement?.parentElement) {
+            backToTopElement.parentElement.remove();
+        }
+    });
+</script>

@@ -1,29 +1,22 @@
 ---
-title: "The Legend of Zelda: Twilight Princess Remastered"
-description: This project aims to remaster the GameCube version of Twilight Princess in Unity, bringing enhanced graphics and modern gameplay improvements.
+title: "Documentation"
+folderPath: "docs"
 ---
 
-<CardGrid stagger>
-	<Card title="Contribute" icon="pencil">
-		Want to help with the development of this remaster? Whether you're a developer, artist, or just passionate about Zelda, we’d love your support!
-	
-		<LinkButton href="/getting-started/">Get started</LinkButton>
-	</Card>
-	<Card title="FAQ" icon="open-book">
-		Have questions about the project? Learn more about our goals, progress, and how you can get involved by visiting our FAQ page.
-		
-		<LinkButton href="/faq">FAQ</LinkButton>
-	</Card>
-	<Card title="Team" icon="information">
-		Meet the passionate team behind this project. We’re a group of Zelda fans dedicated to bringing this classic adventure back to life.
-		
-		<LinkButton href="/team">Team</LinkButton>
-	</Card>
-</CardGrid>
+Welcome to the **Zelda Twilight Princess Remastered** documentation hub.  
+Here you’ll find everything you need — from installing the game to setting up the Unity development environment, modding, and more.
 
-## Socials
-<CardGrid stagger>
-	<Card title="Socials" icon="discord">
-		Join our [Discord](https://discord.gg/WK8umpGm) server!
-	</Card>
-</CardGrid>
+Whether you're a player, contributor, or just curious, we've got you covered.
+
+{{< cards >}}
+
+{{< card link="install" subtitle="Step-by-step instructions to install and play the game." title="Install Guide" icon="download" >}}
+
+{{< card link="unitydevsetup" subtitle="Learn how to set up the Unity project, import assets, and build the game." title="Unity Dev Setup" icon="code" >}}
+
+{{< card link="faq" title="FAQ" subtitle="Frequently asked questions about the project." icon="question-mark-circle" >}}
+
+{{< card link="legal" title="Legal Notice" subtitle="Learn about copyright, fair use, and how we respect the original IP." icon="scale" >}}
+
+{{< /cards >}}
+
